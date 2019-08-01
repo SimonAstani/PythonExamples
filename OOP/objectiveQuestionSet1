@@ -1,0 +1,549 @@
+[BAC
+Q-1. Which Of The Following Represents A Distinctly Identifiable Entity In The Real World?
+A. A class
+B. An object
+C. A method
+D. A data field
+
+Q-2. Which Of The Following Represents A Template, Blueprint, Or Contract That Defines Objects Of The Same Type?
+A. A class
+B. An object
+C. A method
+D. A data field
+
+Q-3. Which Of The Following Keywords Mark The Beginning Of The Class Definition?
+A. def
+B. return
+C. class
+D. All of the above.
+
+Q-4. Which Of The Following Is Required To Create A New Instance Of The Class?
+A. A constructor
+B. A class
+C. A value-returning method
+D. A None method
+
+
+Q-5. Which Of The Following Statements Is Most Accurate For The Declaration X = Circle()?
+A. x contains an int value.
+B. x contains an object of the Circle type.
+C. x contains a reference to a Circle object.
+D. You can assign an int value to x.
+
+Q-6. What Will Be The Output Of The Following Code Snippet?
+class Sales:
+    def __init__(self, id):
+        self.id = id
+        id = 100
+
+val = Sales(123)
+print (val.id)
+
+Q-7. Which Of The Following Statements Are Correct?
+A. A reference variable is an object.
+B. A reference variable refers to an object.
+C. An object may contain other objects.
+D. An object can contain the references to other objects.
+
+Q-8. What Will Be The Output Of The Following?
+s = "\t\tWelcome\n"
+print(s.strip())
+A. \t\tWelcome\n
+B. Welcome\n
+C. \t\tWELCOME
+D. Welcome
+
+Q-9. What Will Be The Output Of The Following Code Snippet?
+class Person:
+    def __init__(self, id):
+        self.id = id
+
+sam = Person(100)
+
+sam.__dict__['age'] = 49
+
+print (sam.age + len(sam.__dict__))
+A. 1
+B. 2
+C. 49
+D. 50
+E. 51
+
+Online Python Quiz for Beginners – Python Classes and Objects
+Python Quiz | By Meenakshi Agarwal
+We’ve curated this online Python quiz for beginners learning Python programming.
+
+It enlists 20 questions on Python classes and objects.
+
+It’s easy to define a class in Python using the <class> keyword. Check out a simple class definition below.
+
+class TestClass:
+
+    '''It is a doc string. I've implemented a new class.'''
+   pass
+
+In the above code, you can see the highlighted doc string specifying the description of the class.
+
+Let’s now see a little more about classes before moving on to the quiz.
+
+Basics Of Python Classes.
+In Python, every class has a local namespace to define all its members which could either be functions or variables. Also, every Python class holds a set of special attributes. Each of them starts and ends with a double underscore sign (__). If you consider the above example, then using the __doc__ will return the doc string of that class.
+
+Once you have the class defined, it is easy to instantiate it anytime. You can use a class object to reference any of its attributes. Let’s see a simple example to define the class instance.
+
+>>> myObj = TestClass()
+Like constructors in C++, we’ve __init__() method in Python. This function gets called every time you instantiate the class. Please refer the below example to view a complete Python class.
+
+class EmployeeData:
+
+    def __init__(self, sal=0, age=0):
+        self.sal = sal
+        self.age = age
+
+    def getData(self):
+        print("{0}+{1}j".format(self.sal,self.age))
+Let’s now start the online Python quiz for beginners.
+
+Online Python Quiz For Beginners – Classes And Objects.
+Online Python Quiz for Beginners - Python Classes and Objects
+How to use Classes in Python?
+
+Q-1. Which Of The Following Represents A Distinctly Identifiable Entity In The Real World?
+A. A class
+B. An object
+C. A method
+D. A data field
+
+Click to check the answer.
+Answer. B
+
+
+Q-2. Which Of The Following Represents A Template, Blueprint, Or Contract That Defines Objects Of The Same Type?
+A. A class
+B. An object
+C. A method
+D. A data field
+
+Click to check the answer.
+Answer. A
+
+
+Q-3. Which Of The Following Keywords Mark The Beginning Of The Class Definition?
+A. def
+B. return
+C. class
+D. All of the above.
+
+Click to check the answer.
+Answer. C
+
+
+Q-4. Which Of The Following Is Required To Create A New Instance Of The Class?
+A. A constructor
+B. A class
+C. A value-returning method
+D. A None method
+
+Click to check the answer.
+Answer. A
+
+
+Q-5. Which Of The Following Statements Is Most Accurate For The Declaration X = Circle()?
+A. x contains an int value.
+B. x contains an object of the Circle type.
+C. x contains a reference to a Circle object.
+D. You can assign an int value to x.
+
+Click to check the answer.
+
+
+Q-6. What Will Be The Output Of The Following Code Snippet?
+class Sales:
+    def __init__(self, id):
+        self.id = id
+        id = 100
+
+val = Sales(123)
+print (val.id)
+A. SyntaxError, this program will not run
+B. 100
+C. 123
+D. None of the above
+
+Click to check the answer.
+
+
+Q-7. Which Of The Following Statements Are Correct?
+A. A reference variable is an object.
+B. A reference variable refers to an object.
+C. An object may contain other objects.
+D. An object can contain the references to other objects.
+
+Click to check the answer.
+
+
+Q-8. What Will Be The Output Of The Following?
+s = "\t\tWelcome\n"
+print(s.strip())
+A. \t\tWelcome\n
+B. Welcome\n
+C. \t\tWELCOME
+D. Welcome
+
+Click to check the answer.
+
+
+Q-9. What Will Be The Output Of The Following Code Snippet?
+class Person:
+    def __init__(self, id):
+        self.id = id
+
+sam = Person(100)
+
+sam.__dict__['age'] = 49
+
+print (sam.age + len(sam.__dict__))
+A. 1
+B. 2
+C. 49
+D. 50
+E. 51
+
+Click to check the answer.
+
+
+Q-10. Which Of The Following Can Be Used To Invoke The __init__ Method In B From A, Where A Is A Subclass Of B?
+A. super().__init__()
+B. super().__init__(self)
+C. B.__init__()
+D. B.__init__(self)
+
+Q-11. Which Of The Following Statements Are Correct About The Given Code Snippet?
+class A:
+    def __init__(self, i = 0):
+        self.i = i
+
+class B(A):
+    def __init__(self, j = 0):
+        self.j = j
+
+def main():
+    b = B()
+    print(b.i)
+    print(b.j)
+
+main()
+A. Class B inherits A, but the data field “i” in A is not inherited.
+B. Class B inherits A, thus automatically inherits all data fields in A.
+C. When you create an object of B, you have to pass an argument such as B(5).
+D. The data field “j” cannot be accessed by object b.
+
+Q-12. Which Of The Following Statements Is True?
+A. By default, the __new__() method invokes the __init__ method.
+B. The __new__() method is defined in the object class.
+C. The __init__() method is defined in the object class.
+D. The __str__() method is defined in the object class.
+E. The __eq__(other) method is defined in the object class.
+
+Q-13. What Will Be The Output Of The Following Code Snippet?
+class A:
+    def __init__(self):
+        self.calcI(30)
+        print("i from A is", self.i)
+
+    def calcI(self, i):
+        self.i = 2 * i;
+
+class B(A):
+    def __init__(self):
+        super().__init__()
+
+    def calcI(self, i):
+        self.i = 3 * i;
+
+b = B()
+A. The __init__ method of only class B gets invoked.
+B. The __init__ method of class A gets invoked and it displays “i from A is 0”.
+C. The __init__ method of class A gets invoked and it displays “i from A is 60”.
+D. The __init__ method of class A gets invoked and it displays “i from A is 90”.
+
+Online Python Quiz for Beginners – Python Classes and Objects
+Python Quiz | By Meenakshi Agarwal
+We’ve curated this online Python quiz for beginners learning Python programming.
+
+It enlists 20 questions on Python classes and objects.
+
+It’s easy to define a class in Python using the <class> keyword. Check out a simple class definition below.
+
+class TestClass:
+
+    '''It is a doc string. I've implemented a new class.'''
+   pass
+
+In the above code, you can see the highlighted doc string specifying the description of the class.
+
+Let’s now see a little more about classes before moving on to the quiz.
+
+Basics Of Python Classes.
+In Python, every class has a local namespace to define all its members which could either be functions or variables. Also, every Python class holds a set of special attributes. Each of them starts and ends with a double underscore sign (__). If you consider the above example, then using the __doc__ will return the doc string of that class.
+
+Once you have the class defined, it is easy to instantiate it anytime. You can use a class object to reference any of its attributes. Let’s see a simple example to define the class instance.
+
+>>> myObj = TestClass()
+Like constructors in C++, we’ve __init__() method in Python. This function gets called every time you instantiate the class. Please refer the below example to view a complete Python class.
+
+class EmployeeData:
+
+    def __init__(self, sal=0, age=0):
+        self.sal = sal
+        self.age = age
+
+    def getData(self):
+        print("{0}+{1}j".format(self.sal,self.age))
+Let’s now start the online Python quiz for beginners.
+
+Online Python Quiz For Beginners – Classes And Objects.
+Online Python Quiz for Beginners - Python Classes and Objects
+How to use Classes in Python?
+
+Q-1. Which Of The Following Represents A Distinctly Identifiable Entity In The Real World?
+A. A class
+B. An object
+C. A method
+D. A data field
+
+Click to check the answer.
+Answer. B
+
+
+Q-2. Which Of The Following Represents A Template, Blueprint, Or Contract That Defines Objects Of The Same Type?
+A. A class
+B. An object
+C. A method
+D. A data field
+
+Click to check the answer.
+Answer. A
+
+
+Q-3. Which Of The Following Keywords Mark The Beginning Of The Class Definition?
+A. def
+B. return
+C. class
+D. All of the above.
+
+Click to check the answer.
+Answer. C
+
+
+Q-4. Which Of The Following Is Required To Create A New Instance Of The Class?
+A. A constructor
+B. A class
+C. A value-returning method
+D. A None method
+
+Click to check the answer.
+Answer. A
+
+
+Q-5. Which Of The Following Statements Is Most Accurate For The Declaration X = Circle()?
+A. x contains an int value.
+B. x contains an object of the Circle type.
+C. x contains a reference to a Circle object.
+D. You can assign an int value to x.
+
+Click to check the answer.
+
+
+Q-6. What Will Be The Output Of The Following Code Snippet?
+class Sales:
+    def __init__(self, id):
+        self.id = id
+        id = 100
+
+val = Sales(123)
+print (val.id)
+A. SyntaxError, this program will not run
+B. 100
+C. 123
+D. None of the above
+
+Click to check the answer.
+
+
+Q-7. Which Of The Following Statements Are Correct?
+A. A reference variable is an object.
+B. A reference variable refers to an object.
+C. An object may contain other objects.
+D. An object can contain the references to other objects.
+
+Click to check the answer.
+
+
+Q-8. What Will Be The Output Of The Following?
+s = "\t\tWelcome\n"
+print(s.strip())
+A. \t\tWelcome\n
+B. Welcome\n
+C. \t\tWELCOME
+D. Welcome
+
+Click to check the answer.
+
+
+Q-9. What Will Be The Output Of The Following Code Snippet?
+class Person:
+    def __init__(self, id):
+        self.id = id
+
+sam = Person(100)
+
+sam.__dict__['age'] = 49
+
+print (sam.age + len(sam.__dict__))
+A. 1
+B. 2
+C. 49
+D. 50
+E. 51
+
+Click to check the answer.
+
+
+Q-10. Which Of The Following Can Be Used To Invoke The __init__ Method In B From A, Where A Is A Subclass Of B?
+A. super().__init__()
+B. super().__init__(self)
+C. B.__init__()
+D. B.__init__(self)
+
+Click to check the answer.
+Suggested Reading.
+💡 Quick Python Tutorial on Classes and Quiz for Experienced.
+
+Q-11. Which Of The Following Statements Are Correct About The Given Code Snippet?
+class A:
+    def __init__(self, i = 0):
+        self.i = i
+
+class B(A):
+    def __init__(self, j = 0):
+        self.j = j
+
+def main():
+    b = B()
+    print(b.i)
+    print(b.j)
+
+main()
+A. Class B inherits A, but the data field “i” in A is not inherited.
+B. Class B inherits A, thus automatically inherits all data fields in A.
+C. When you create an object of B, you have to pass an argument such as B(5).
+D. The data field “j” cannot be accessed by object b.
+
+Click to check the answer.
+
+
+Q-12. Which Of The Following Statements Is True?
+A. By default, the __new__() method invokes the __init__ method.
+B. The __new__() method is defined in the object class.
+C. The __init__() method is defined in the object class.
+D. The __str__() method is defined in the object class.
+E. The __eq__(other) method is defined in the object class.
+
+Click to check the answer.
+
+
+Q-13. What Will Be The Output Of The Following Code Snippet?
+class A:
+    def __init__(self):
+        self.calcI(30)
+        print("i from A is", self.i)
+
+    def calcI(self, i):
+        self.i = 2 * i;
+
+class B(A):
+    def __init__(self):
+        super().__init__()
+
+    def calcI(self, i):
+        self.i = 3 * i;
+
+b = B()
+A. The __init__ method of only class B gets invoked.
+B. The __init__ method of class A gets invoked and it displays “i from A is 0”.
+C. The __init__ method of class A gets invoked and it displays “i from A is 60”.
+D. The __init__ method of class A gets invoked and it displays “i from A is 90”.
+
+Click to check the answer.
+
+
+Q-14. What Will Be The Output Of The Following Code Snippet?
+class A:
+    def __init__(self):
+        self.calcI(30)
+
+    def calcI(self, i):
+        self.i = 2 * i;
+
+class B(A):
+    def __init__(self):
+        super().__init__()
+        print("i from B is", self.i)
+
+    def calcI(self, i):
+        self.i = 3 * i;
+
+b = B()
+A. The __init__ method of only class B gets invoked.
+B. The __init__ method of class A gets invoked and it displays “i from B is 0”.
+C. The __init__ method of class A gets invoked and it displays “i from B is 60”.
+D. The __init__ method of class A gets invoked and it displays “i from B is 90”.
+
+Q-15. Which Of The Following Statements Can Be Used To Check, Whether An Object “Obj” Is An Instance Of Class A Or Not?
+A. obj.isinstance(A)
+B. A.isinstance(obj)
+C. isinstance(obj, A)
+D. isinstance(A, obj)
+
+
+Q-16. What Relationship Correctly Fits For University And Professor?
+A. association
+B. composition
+C. inheritance
+D. All of the above
+
+Q-17. What Relationship Is Suited For Course And Faculty?
+A. association
+B. composition
+C. inheritance
+D. None of the above
+
+Q-18. What Relationship Is Best Suited For Employee And Person?
+A. association
+B. composition
+C. inheritance
+D. None of the above
+
+
+
+{
+"Q-1": B,
+"Q-2": A,
+"Q-3": C,
+"Q-4": A,
+"Q-5": C,
+"Q-6": C,
+"Q-7": B AND D,
+"Q-8": D,
+"Q-9": E,
+"Q-10": A AND D,
+"Q-11": A,
+"Q-12": A,B,C,D AND E,
+"Q-13": D,
+"Q-14": D,
+"Q-15": C,
+"Q-16": B,
+"Q-17": A,
+"Q-18": C,
+}
