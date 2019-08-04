@@ -1,0 +1,125 @@
+1. Which of the following best describes inheritance?
+a)	Ability of a class to derive members of another class as a part of its own definition
+b)	Means of bundling instance variables and methods in order to restrict access to certain class members
+c)	Focuses on variables and passing of variables to functions
+d)	Allows for implementation of elegant software that is well designed and easily modified
+
+Answer: a
+Explanation: If the class definition is class B(A): then class B inherits the methods of class A. This is called inheritance.
+
+2.What is the output of the following piece of code?
+
+class Test:
+    def __init__(self):
+        self.x = 0
+class Derived_Test(Test):
+    def __init__(self):
+        self.y = 1
+def main():
+    b = Derived_Test()
+    print(b.x,b.y)
+main()
+a)	0 1
+b)	0 0
+c) Error because class B inherits A but variable x isn’t inherited
+d)	Error because when object is created, argument must be passed like Derived_Test(1)
+
+Answer: c
+Explanation: Since the invoking method, Test.__init__(self), isn’t present in the derived class, variable x can’t be inherited.
+
+3. When defining a subclass in Python that is meant to serve as a subtype, the subtype Python keyword is used. Is the statement true or false?
+a)	True
+b)	False
+
+Answer: b
+Explanation: B is a subtype of B if instances of type B can substitute for instances of type A without affecting semantics.
+
+4.	What is the output of the following piece of code?
+
+class A:
+     def __init__(self):
+         self.__i = 1
+         self.j = 5
+
+     def display(self):
+         print(self.__i, self.j)
+class B(A):
+     def __init__(self):
+         super().__init__()
+         self.__i = 2
+         self.j = 7
+c = B()
+c.display()
+
+a)	2 7
+b)	1 5
+c)	1 7
+d)	2 5
+
+Answer: c
+Explanation: Any change made in variable i isn’t reflected as it is the private member of the superclass.
+
+5. Method issubclass() checks if a class is a subclass of another class. True or False?
+a)	True
+b)	False
+
+Answer: a
+Explanation: Method issubclass() returns True if a class is a subclass of another class and False otherwise.
+
+
+6. What is the output of the following piece of code?
+
+class A:
+    def __init__(self):
+        self.__x = 1
+class B(A):
+    def display(self):
+        print(self.__x)
+def main():
+    obj = B()
+    obj.display()
+main()
+a)	1
+b)	0
+c)	Error, invalid syntax for object declaration
+d)	Error, private class member can’t be accessed in a subclass
+
+Answer: d
+Explanation: Private class members in the superclass can’t be accessed in the subclass.
+
+
+7. What is the output of the following piece of code?
+
+class A:
+    def test1(self):
+        print(" test of A called ")
+class B(A):
+    def test(self):
+        print(" test of B called ")
+class C(A):
+    def test(self):
+        print(" test of C called ")
+class D(B,C):
+    def test2(self):
+        print(" test of D called ")
+obj=D()
+obj.test()
+a)	test of B called
+test of C called
+b)	test of C called
+test of B called
+c)	test of B called
+d)	Error, both the classes from which D derives has same method test()
+
+
+Answer: c
+Explanation: Execute in Python shell to verify. If class D(B,C): is switched is class D(C,B): test of C is called.
+
+8.	Which of the following statements isn’t true?
+a)	A non-private method in a superclass can be overridden
+b)	A derived class is a subset of superclass
+c)	The value of a private variable in the superclass can be changed in the subclass
+d)	When invoking the constructor from a subclass, the constructor of superclass is automatically invoked
+
+Answer: c
+Explanation: If the value of a private variable in a superclass is changed in the subclass, the change isn’t reflected.

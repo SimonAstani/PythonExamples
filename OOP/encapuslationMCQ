@@ -1,0 +1,183 @@
+Python Questions and Answers – Encapsulation
+This set of Python Multiple Choice Questions & Answers (MCQs) focuses on “Encapsulation”.
+
+1.	Which of these is not a fundamental features of OOP?
+a)	Encapsulation
+b)	Inheritance
+c)	Instantiation
+d)	Polymorphism
+
+
+
+2.	Which of the following is the most suitable definition for encapsulation?
+a)	Ability of a class to derive members of another class as a part of its own definition
+b)	Means of bundling instance variables and methods in order to restrict access to certain class members
+c)	Focuses on variables and passing of variables to functions
+d)	Allows for implementation of elegant software that is well designed and easily modified
+
+
+
+3.	What is the output of the following code?
+
+class Demo:
+    def __init__(self):
+        self.a = 1
+        self.__b = 1
+
+    def display(self):
+        return self.__b
+obj = Demo()
+print(obj.a)
+a) The program has an error because there isn’t any function to return self.a
+b) The program has an error because b is private and display(self) is returning a private member
+c)	The program runs fine and 1 is printed
+d)	The program has an error as you can’t name a class member using __b
+
+
+
+4.	What is the output of the following code?
+
+class Demo:
+    def __init__(self):
+        self.a = 1
+        self.__b = 1
+
+    def display(self):
+        return self.__b
+
+obj = Demo()
+print(obj.__b)
+a)	The program has an error because there isn’t any function to return self.a
+b)	The program has an error because b is private and display(self) is returning a private member
+c)	The program has an error because b is private and hence can’t be printed
+d)	The program runs fine and 1 is printed
+
+
+
+5.	Methods of a class that provide access to private members of the class are called as ______ and ______
+a)	getters/setters
+b)	__repr__/__str__
+c)	user-defined functions/in-built functions
+d)	__init__/__del__
+
+
+
+6. Which of these is a private data field?
+
+def Demo:
+def __init__(self):
+    __a = 1
+    self.__b = 1
+    self.__c__ = 1
+    __d__= 1
+a)	__a
+b)	__b
+c)	__c__
+d)	__d__
+
+
+
+7. What is the output of the following code?
+
+class Demo:
+     def __init__(self):
+         self.a = 1
+         self.__b = 1
+
+     def get(self):
+         return self.__b
+
+obj = Demo()
+print(obj.get())
+a)	The program has an error because there isn’t any function to return self.a
+b)	The program has an error because b is private and display(self) is returning a private member
+c)	The program has an error because b is private and hence can’t be printed
+d)	The program runs fine and 1 is printed
+
+
+
+8. What is the output for the following piece of code?
+
+class Demo:
+     def __init__(self):
+         self.a = 1
+         self.__b = 1
+     def get(self):
+         return self.__b
+obj = Demo()
+obj.a=45
+print(obj.a)
+a)	The program runs properly and prints 45
+b)	The program has an error because the value of members of a class can’t be changed from outside the class
+c)	The program runs properly and prints 1
+d)	The program has an error because the value of members outside a class can only be changed as self.a=45
+
+
+
+9. Private members of a class cannot be accessed. True or False?
+a)	True
+b)	False
+
+
+10. The purpose of name mangling is to avoid unintentional access of private class members. True or False?
+a)	True
+b)	False
+
+
+11. What is the output of the following code?
+
+class fruits:
+    def __init__(self):
+        self.price = 100
+        self.__bags = 5
+    def display(self):
+        print(self.__bags)
+obj=fruits()
+obj.display()
+a)	The program has an error because display() is trying to print a private class member
+b)	The program runs fine but nothing is printed
+c)	The program runs fine and 5 is printed
+d)	The program has an error because display() can’t be accessed
+
+
+12. What is the output of the following code?
+
+ class student:
+    def __init__(self):
+        self.marks = 97
+        self.__cgpa = 8.7
+    def display(self):
+        print(self.marks)
+obj=student()
+print(obj._student__cgpa)
+
+a)	The program runs fine and 8.7 is printed
+b)	Error because private class members can’t be accessed
+c)	Error because the proper syntax for name mangling hasn’t been implemented
+d)	The program runs fine but nothing is printed
+
+
+
+13. Which of the following is false about protected class members?
+a)	They begin with one underscore
+b)	They can be accessed by subclasses
+c)	They can be accessed by name mangling method
+d)	They can be accessed within a class
+
+
+
+14. What is the output of the following piece of code?
+
+class objects:
+    def __init__(self):
+        self.colour = None
+        self._shape = "Circle"
+
+    def display(self, s):
+        self._shape = s
+obj=objects()
+print(obj._objects_shape)
+a)	The program runs fine because name mangling has been properly implemented
+b)	Error because the member shape is a protected member
+c)	Error because the proper syntax for name mangling hasn’t been implemented
+d)	Error because the member shape is a private member
